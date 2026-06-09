@@ -13,6 +13,6 @@ app.use(cors({
 }));
 
 app.use(express.json());
-app.use("/cargos/", rotaCargo);
+app.use("/cargos", rotaCargo);
 
 app.listen(port, localhost, () => console.log(`API Executando na porta ${port}`));
